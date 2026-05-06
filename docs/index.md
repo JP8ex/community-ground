@@ -1,6 +1,5 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to The Great CCCB
+This is my home page right?
 
 ## Commands
 

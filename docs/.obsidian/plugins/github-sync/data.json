@@ -1,0 +1,9 @@
+{
+  "remoteURL": "https://github.com/JP8ex/community-ground.git",
+  "gitLocation": "",
+  "syncinterval": 0,
+  "isSyncOnLoad": false,
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
+}
