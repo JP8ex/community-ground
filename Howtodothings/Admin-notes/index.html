@@ -1,0 +1,787 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../stories/">
+      
+      
+        <link rel="next" href="../howtodothings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Admin Workflow - The Great Crusty Custy Cook-Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#admin-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="The Great Crusty Custy Cook-Book" class="md-header__button md-logo" aria-label="The Great Crusty Custy Cook-Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Great Crusty Custy Cook-Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Admin Workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="The Great Crusty Custy Cook-Book" class="md-nav__button md-logo" aria-label="The Great Crusty Custy Cook-Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The Great Crusty Custy Cook-Book
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to The Great CCCB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Howtodothings
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Howtodothings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howtodothings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recipes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recipes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Eggs%20on%20Toast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="admin-workflow">Admin Workflow<a class="headerlink" href="#admin-workflow" title="Permanent link">&para;</a></h1>
+<p>This document explains the workflow for maintaining and publishing the Community Ground Knowledge Base using:</p>
+<ul>
+<li>Obsidian</li>
+<li>MkDocs</li>
+<li>GitHub</li>
+<li>GitHub Pages</li>
+</ul>
+<hr />
+<h1 id="system-overview">System Overview<a class="headerlink" href="#system-overview" title="Permanent link">&para;</a></h1>
+<p>The system works like this:</p>
+<pre><code class="language-text">Obsidian → Markdown Files → GitHub → MkDocs → Public Website
+</code></pre>
+<p>All content is stored as standard markdown (<code>.md</code>) files.</p>
+<p>These files are:
+- edited locally in Obsidian
+- backed up in GitHub
+- automatically published as a website using MkDocs</p>
+<hr />
+<h1 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">&para;</a></h1>
+<p>Project folder:</p>
+<pre><code class="language-text">community-ground/
+├── docs/
+├── mkdocs.yml
+</code></pre>
+<p>The <code>docs/</code> folder contains all website content.</p>
+<p>This same folder is also opened as the Obsidian vault.</p>
+<p>Example structure:</p>
+<pre><code class="language-text">docs/
+├── index.md
+├── admin-workflow.md
+├── recipes/
+├── stories/
+├── maintenance/
+├── events/
+├── photos/
+</code></pre>
+<hr />
+<h1 id="opening-the-vault-in-obsidian">Opening the Vault in Obsidian<a class="headerlink" href="#opening-the-vault-in-obsidian" title="Permanent link">&para;</a></h1>
+<p>Open Obsidian and choose:</p>
+<pre><code class="language-text">Open folder as vault
+</code></pre>
+<p>Select:</p>
+<pre><code class="language-text">C:\Users\Jacob\community-ground\docs
+</code></pre>
+<p>Do NOT select the entire <code>community-ground</code> folder.</p>
+<p>Only select the <code>docs</code> folder.</p>
+<hr />
+<h1 id="running-the-website-locally">Running the Website Locally<a class="headerlink" href="#running-the-website-locally" title="Permanent link">&para;</a></h1>
+<p>Open PowerShell:</p>
+<pre><code class="language-powershell">cd C:\Users\Jacob\community-ground
+python -m mkdocs serve
+</code></pre>
+<p>Then open:</p>
+<pre><code class="language-text">http://127.0.0.1:8000
+</code></pre>
+<p>This creates a live preview of the website.</p>
+<p>Any changes saved in Obsidian will automatically appear in the local website preview.</p>
+<hr />
+<h1 id="creating-new-pages">Creating New Pages<a class="headerlink" href="#creating-new-pages" title="Permanent link">&para;</a></h1>
+<p>Inside Obsidian:
+- create a new note
+- place it in the correct folder
+- save normally</p>
+<p>Example:</p>
+<pre><code class="language-text">recipes/damper.md
+</code></pre>
+<hr />
+<h1 id="recommended-markdown-style">Recommended Markdown Style<a class="headerlink" href="#recommended-markdown-style" title="Permanent link">&para;</a></h1>
+<p>Example page:</p>
+<pre><code class="language-markdown"># Damper Recipe
+
+## Ingredients
+- Flour
+- Water
+- Salt
+
+## Method
+Mix ingredients and cook over fire.
+</code></pre>
+<hr />
+<h1 id="internal-linking">Internal Linking<a class="headerlink" href="#internal-linking" title="Permanent link">&para;</a></h1>
+<p>Use Obsidian wiki-links:</p>
+<pre><code class="language-markdown">[[Damper Recipe]]
+[[Kitchen Procedures]]
+</code></pre>
+<p>This allows notes to connect together like a wiki.</p>
+<hr />
+<h1 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h1>
+<p>Store images inside a folder such as:</p>
+<pre><code class="language-text">docs/photos/
+</code></pre>
+<p>Example markdown image:</p>
+<pre><code class="language-markdown">![Kitchen Setup](photos/kitchen.jpg)
+</code></pre>
+<hr />
+<h1 id="website-navigation">Website Navigation<a class="headerlink" href="#website-navigation" title="Permanent link">&para;</a></h1>
+<p>Website navigation is controlled by:</p>
+<pre><code class="language-text">mkdocs.yml
+</code></pre>
+<p>If a new page is added, it should also be added to navigation.</p>
+<p>Example:</p>
+<pre><code class="language-yaml">nav:
+  - Home: index.md
+
+  - Recipes:
+      - Damper Recipe: recipes/damper.md
+
+  - Stories:
+      - Community History: stories/history.md
+
+  - Admin:
+      - Workflow: admin-workflow.md
+</code></pre>
+<hr />
+<h1 id="publishing-changes">Publishing Changes<a class="headerlink" href="#publishing-changes" title="Permanent link">&para;</a></h1>
+<p>After making changes in Obsidian:</p>
+<p>Open PowerShell:</p>
+<pre><code class="language-powershell">cd C:\Users\Jacob\community-ground
+</code></pre>
+<p>Then run:</p>
+<pre><code class="language-powershell">git add .
+git commit -m &quot;Updated content&quot;
+git push
+python -m mkdocs gh-deploy
+</code></pre>
+<p>This:
+1. saves changes into Git history
+2. uploads changes to GitHub
+3. republishes the website</p>
+<hr />
+<h1 id="website-url">Website URL<a class="headerlink" href="#website-url" title="Permanent link">&para;</a></h1>
+<p>Published website:</p>
+<pre><code class="language-text">https://YOURUSERNAME.github.io/community-ground/
+</code></pre>
+<p>Replace <code>YOURUSERNAME</code> with the GitHub username.</p>
+<hr />
+<h1 id="daily-workflow">Daily Workflow<a class="headerlink" href="#daily-workflow" title="Permanent link">&para;</a></h1>
+<p>Typical workflow:</p>
+<ol>
+<li>Open Obsidian</li>
+<li>Edit or create notes</li>
+<li>Preview locally using MkDocs</li>
+<li>Commit changes to GitHub</li>
+<li>Deploy website</li>
+</ol>
+<hr />
+<h1 id="important-rules">Important Rules<a class="headerlink" href="#important-rules" title="Permanent link">&para;</a></h1>
+<h2 id="always-work-inside-the-project-folder">Always work inside the project folder<a class="headerlink" href="#always-work-inside-the-project-folder" title="Permanent link">&para;</a></h2>
+<p>Before using Git commands:</p>
+<pre><code class="language-powershell">cd C:\Users\Jacob\community-ground
+</code></pre>
+<hr />
+<h2 id="keep-filenames-simple">Keep filenames simple<a class="headerlink" href="#keep-filenames-simple" title="Permanent link">&para;</a></h2>
+<p>Good:</p>
+<pre><code class="language-text">damper-recipe.md
+</code></pre>
+<p>Avoid:
+- spaces
+- special characters
+- very long names</p>
+<hr />
+<h2 id="use-folders-early">Use folders early<a class="headerlink" href="#use-folders-early" title="Permanent link">&para;</a></h2>
+<p>Keeping content organised early prevents future mess.</p>
+<p>Recommended categories:
+- recipes
+- stories
+- maintenance
+- events
+- admin
+- photos</p>
+<hr />
+<h1 id="recommended-future-improvements">Recommended Future Improvements<a class="headerlink" href="#recommended-future-improvements" title="Permanent link">&para;</a></h1>
+<p>Possible future additions:</p>
+<ul>
+<li>Search improvements</li>
+<li>Tags/categories</li>
+<li>User contribution guides</li>
+<li>Custom domain</li>
+<li>Photo galleries</li>
+<li>Comments</li>
+<li>Automated deployment</li>
+<li>Obsidian Git integration</li>
+</ul>
+<hr />
+<h1 id="backup-safety">Backup Safety<a class="headerlink" href="#backup-safety" title="Permanent link">&para;</a></h1>
+<p>GitHub acts as:
+- backup
+- version history
+- change tracking</p>
+<p>If something breaks:
+- previous versions can be restored</p>
+<hr />
+<h1 id="philosophy">Philosophy<a class="headerlink" href="#philosophy" title="Permanent link">&para;</a></h1>
+<p>The goal of this system is:</p>
+<ul>
+<li>simple</li>
+<li>free</li>
+<li>future-proof</li>
+<li>easy to edit</li>
+<li>community-owned</li>
+<li>portable</li>
+</ul>
+<p>All content remains as plain markdown files that can be moved anywhere in the future.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
