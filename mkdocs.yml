@@ -1,0 +1,11 @@
+site_name: The Great Crusty Custy Cook-Book
+
+Theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Recipes: recipes.md
+  - Stories: stories.md
+  - Events: events.md
+  - How to do Things: howtodothings.md
